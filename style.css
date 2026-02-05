@@ -833,3 +833,15 @@ img {
     object-fit: cover;      /* 🔥 THIS IS THE KEY FIX */
     display: block;
 }
+/* === Mobile Icon Visibility Fix === */
+@media (max-width: 768px) {
+
+  /* Skill icons */
+  .skill-icon {
+    font-size: 2.5rem !important;
+    color: var(--primary-color) !important;
+    opacity: 1 !important;
+  }
+
+}
+
