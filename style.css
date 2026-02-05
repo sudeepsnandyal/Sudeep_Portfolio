@@ -844,4 +844,46 @@ img {
   }
 
 }
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+/* ================================
+   MOBILE ICON VISIBILITY FIXES
+   ================================ */
+
+/* Fix skill icons on mobile */
+@media (max-width: 768px) {
+  .skill-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    opacity: 1;
+  }
+}
+
+/* Fix LinkedIn icon in Get In Touch */
+@media (max-width: 768px) {
+  .social-links a i {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+  }
+}
+
+/* Fix GitHub icon in Projects */
+@media (max-width: 768px) {
+  .project-link i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+  }
+}
+
+/* Prevent icons from being hidden/clipped */
+.skill-card,
+.project-card,
+.social-links {
+  overflow: visible;
+}
+
 
